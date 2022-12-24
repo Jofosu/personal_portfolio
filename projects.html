@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Projects</title>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header-area">
+            <div id="header"></div>
+            <script>
+                $("#header").load("/assets/header.html");
+            </script>
+        </header>
+        <!-- End of Header Area -->
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script>
+            $("#nav-placeholder").load("/assets/nav.html");
+        </script>
+        <!-- Projects section-->
+        <section id="projects">
+            <div class="container mt-3 project">
+                <h1 class="text-center">Projects</h1>
+                <div class="row">
+                    <div class="col-lg-4 mt-4"
+                        onclick='window.open("https://github.com/Jofosu/Voting-App", "mywindow");'
+                        style="cursor: pointer;">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="imgs/Voting App.webp"
+                                alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Voting App</h4>
+                                <p class="card-text">Work in progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4"
+                        onclick='window.open("https://github.com/Jofosu/Finstagram", "mywindow");'
+                        style="cursor: pointer;">
+                        <div class="card projectsContent">
+                            <img class="card-img-top"
+                                src="imgs/finstagram.jpeg"
+                                alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Finstagram</h4>
+                                <p class="card-text">Finstagram is a web
+                                    application for sharing photo.It gives users
+                                    more privacy than many photo sharing sites
+                                    by giving them more detailed control over
+                                    who can see which photos they post.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-4">
+                        <div class="card projectsContent">
+                            <img class="card-img-top"
+                                src="imgs/chat_app.webp"
+                                alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Chat App</h4>
+                                <p class="card-text">Work in progress.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 mt-4"
+                        onclick='window.open("https://github.com/Jofosu/professor-student-advising-app", "mywindow");'
+                        style="cursor: pointer;">
+                        <div class="card projectsContent">
+                            <img class="card-img-top"
+                                src="imgs/adivisng app.png"
+                                alt="Card image"
+                                style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">Advising App</h4>
+                                <p class="card-text">This prototype allows an
+                                    advisor to manage advisees by adding and
+                                    deleting
+                                    students as well as manage the department
+                                    course catalogue in the same
+                                    fashion. The advisor can also list
+                                    requirements for a major as well as the
+                                    prerequisites of any entered course.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- End of Project Section -->
+        <!-- Footer Area -->
+        <div id="footer"></div>
+        <script>
+            $("#footer").load("assets/footer.html");
+        </script>
+        <!-- End of Footer Area -->
+    </body>
+
+</html>

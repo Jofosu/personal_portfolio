@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Projects</title>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header-area">
+            <div id="header"></div>
+            <script>
+                $("#header").load("/assets/header.html");
+            </script>
+        </header>
+        <!-- End of Header Area -->
+        <!--Navigation bar-->
+        <div id="nav-placeholder"></div>
+        <script>
+            $("#nav-placeholder").load("/assets/nav.html");
+        </script>
+        <!-- End of Navigation bar -->
+        <!-- Contact section-->
+        <section id="contact">
+            <div class="container mt-3 contactContent">
+                <h1 class="text-center">Contact Me</h1>
+                <div class="row mt-4">
+                    <div class="col-lg-6 contact-helper">
+                        <!-- form fields -->
+                        <form
+                            action="https://formsubmit.co/ofosujude99@gmail.com"
+                            method="POST"
+                            enctype="text/plain">
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Name"
+                                required>
+                            <input type="email"
+                                class="form-control mt-4"
+                                placeholder="Email"
+                                required>
+                            <input type="text"
+                                class="form-control mt-4"
+                                placeholder="Subject"
+                                required>
+                            <div class="mb-4 mt-4">
+                                <textarea class="form-control"
+                                    rows="5"
+                                    id="comment"
+                                    name="text"
+                                    placeholder=""></textarea>
+                            </div>
+                        </form>
+                        <button type="submit"
+                            class="btn btn-success mt-3">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of contact section -->
+        <!-- Footer Area -->
+        <div id="footer"></div>
+        <script>
+            $("#footer").load("assets/footer.html");
+        </script>
+        <!-- End of Footer Area -->
+    </body>
+
+</html>
